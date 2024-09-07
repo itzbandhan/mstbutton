@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>MST Button Clone</title>
+  </head>
+  <body>
+  
+    <div class="button button--gradient-primary button--rounded button--xlg my-6 next-question" role="presentation">Next</div>
+
+      <style>
+      /* Define the CSS variables */
+:root {
+    --mst-primary: #985dec;
+    --mst-primary-button-gradient: linear-gradient(90deg, #985dec 0%, #6d1be2 100%);
+    --mst-primary-button-color: #985dec;
+    --button-gradient-primary-hover-shadow: 0 5px 0 0 rgba(109, 27, 226, 0.3);
+    --lower-transparency-button-label: rgba(63, 142, 252, 0.5);
+    --lower-transparency-button-background: rgba(63, 142, 252, 0.05);
+    --progress-bar-green-gradient: linear-gradient(90deg, #a8e55d 0%, #7ac141 100%);
+    --mst-primary-600: #823be8;
+    --mst-primary-800: #6d1be2;
+    --mst-info: #3f8efc;
+    --question-before-color: #985dec;
+    --question-before-background: rgba(152, 93, 236, 0.3);
+    font-family: 'Proxima Nova', 'Open Sans', 'sans-serif';
+}
+
+/* Style the button */
+.button {
+    font-family: var(--font-family, 'Proxima Nova', 'Open Sans', 'sans-serif');
+    pointer-events: auto;
+    box-sizing: inherit;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #ffffff;
+    background: var(--mst-primary-button-gradient);
+    border: transparent;
+    transition-duration: 0.3s;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease;
+    box-shadow: 0 0px 0 0 rgba(109, 27, 226, 0.3);
+    padding: 0.875rem 2.625rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Hover and focus states */
+.button:hover,
+.button:focus {
+    background: var(--mst-primary-button-gradient);
+    box-shadow: var(--button-gradient-primary-hover-shadow);
+}
+
+/* Additional styles (if needed) */
+.button--rounded {
+    border-radius: 40px;
+}
+
+.button--xlg {
+    padding: 0.875rem 2.625rem;
+}
+
+.my-6 {
+    margin: 1.5rem 0;
+}
+
+    </style>
+  </body>
+</html>
